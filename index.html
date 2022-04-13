@@ -10,18 +10,16 @@
     <meta charset="UTF-8">
   </head>
   <body>
-
     <h1>Te queremos conocer / te estamos buscando!</h1>
     <!--  Main  -->
     <main id="main">
-      <div id="container">
-        <form action="">
+      <form action="" id="survey-form">
           <p>Would like you to work with us?</p>
           <!-- names container -->
           <div id="names-container">
             <!-- NAME -->
             <label for="name" id="name-label"> Name </label>
-            <input type="text" id="name" value="" name="name" placeholder="Ingrese su nombre...">
+            <input type="text" id="name" value="" name="name" placeholder="Ingrese su nombre..." required>
             <!-- LASTNAME -->
             <label for="lastname" id="lastname-label">Lastname</label>
             <input type="text" id="lastname" value="" name="lastname" placeholder="Ingrese su apellido...">
@@ -30,9 +28,9 @@
           <!-- email & age container -->
           <div id="email-age-container">
             <label for="email" id="email-label">Email</label>
-            <input type="email" name="email" id="email" placeholder="example@email.com">
+            <input type="email" name="email" id="email" placeholder="example@email.com" required>
             <label for="age" id="age-label">Age</label>
-            <input type="number" name="age" id="age" min="18" max="65">
+            <input type="number" name="age" id="age" min="18" max="65" required>
           </div>
           <hr>
           <!-- language question -->
@@ -40,31 +38,31 @@
           <!-- language container -->
           <div id="lang-container">
             <label for="python">
-              <input type="checkbox" name="lang" id="python">Python
+              <input type="checkbox" name="lang" id="python" value="python">Python
             </label>
             <label for="javascript">
-              <input type="checkbox" name="lang" id="javascript">Javascript
+              <input type="checkbox" name="lang" id="javascript" value="javascript">Javascript
             </label>
             <label for="java">
-              <input type="checkbox" name="lang" id="java">Java
+              <input type="checkbox" name="lang" id="java" value="java">Java
             </label>
             <label for="c">
-              <input type="checkbox" name="lang" id="c">C#/C++
+              <input type="checkbox" name="lang" id="c" value="c#/c++">C#/C++
             </label>
             <label for="r">
-              <input type="checkbox" name="lang" id="r">R
+              <input type="checkbox" name="lang" id="r" value="r">R
             </label>  
             <label for="go">
-              <input type="checkbox" name="lang" id="go">Go
+              <input type="checkbox" name="lang" id="go" value="go">Go
             </label>
             <label for="kotlin">
-              <input type="checkbox" name="lang" id="kotlin">Kotlin
+              <input type="checkbox" name="lang" id="kotlin" value="kotlin">Kotlin
             </label>
             <label for="typescript">
-              <input type="checkbox" name="lang" id="typescript">Typescript
+              <input type="checkbox" name="lang" id="typescript" value="typescript">Typescript
             </label>
             <label for="others">
-              <input type="checkbox" name="lang" id="others">Others
+              <input type="checkbox" name="lang" id="others" value="others">Others
             </label>
           </div>
           <!-- area select-->
@@ -88,13 +86,13 @@
           <!-- experience container -->
           <div id="experience-level-container">
             <label for="traineer" id="lb-traineer">
-              <input type="radio" name="levels" id="traineer" class="levels">Traineer
+              <input type="radio" name="levels" id="traineer" class="levels" value="traineer" required>Traineer
             </label>
             <label for="junior" id="lb-junior">
-              <input type="radio" name="levels" id="junior" class="levels">Junior
+              <input type="radio" name="levels" id="junior" class="levels" value="junior">Junior
             </label>
             <label for="semi-senior" id="lb-semi-sr">
-              <input type="radio" name="levels" id="semi-senior" class="levels">Semi-sr
+              <input type="radio" name="levels" id="semi-senior" class="levels" value="semi-senior">Semi-sr
             </label>
             <label for="senior" id="lb-senior">
               <input type="radio" name="levels" id="senior" class="levels">Senior
@@ -107,10 +105,9 @@
           </div>
           <!-- button -->
           <div id="btn-container">
-            <button type="submit" id="btn-submit">Submit</button>
+            <button type="submit" id="btn-submit" value="submit">Submit</button>
           </div>
         </form>
-      </div>
     </main>
   </body>
 </html>

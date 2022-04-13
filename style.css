@@ -41,7 +41,7 @@ button {
   font-family: Rubik;
 }
 
-#container {
+#survey-form {
   background: linear-gradient(35deg, #7B68EE, #D8BFD8, #FF6347);
   position: relative;
   width: 450px;
@@ -90,6 +90,7 @@ button {
 /* EMAIL & AGE CONTAINER */
 #email-age-container {
   display: grid;
+  background: linear-gradient(35deg, #7B68EE, #D8BFD8, #FF6347);
   grid-template-columns: repeat(5, 1fr);
   box-shadow: 0px 0px 5px 1px;
   border-radius: 15px;
@@ -192,24 +193,27 @@ textarea {
   grid-template-columns: repeat(5, 1fr);
 }
 #btn-submit {
-  background: #FF6347;
-/*   background: #CD5C5C; */
+  font-weight: bold;
+/*   background: #FF7F50; */
+  background-color: #e6634c;
+  background-color: #ed745e; 
   grid-column: 5/5;
   margin: 0px 5px 0px 5px;
   padding: 3px;
-  border: 1.4px outset #B0C4DE;
+  border: 1.5px outset;
   border-radius: 5px;
-  box-shadow: 0px 0px 5px 0px;
+  box-shadow: 1px 1px 5px 0px;
 }
-button:hover {
-  color: #D3D3D3;
+#btn-submit:hover {
+  background-color: #e25036;
 }
 
 @media (max-width: 500px) {
   label {font-size: 13px;}
   p {font-size: 13.5px;}
-  #container {
-    background: linear-gradient(35deg, #7B68EE, #D8BFD8);
+  #survey-form {
+/*     background: linear-gradient(35deg, #7B68EE, #D8BFD8); */
+    background: linear-gradient(35deg, #7B68EE, #D8BFD8, #D8BFD8, #7B68EE);
     width: 75vw;
   }
 }
