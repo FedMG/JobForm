@@ -110,35 +110,55 @@ textarea {
 
 /* AGE */
 #age-label {
-  margin: 5px 60px;
+  margin: 5px 58px;
   grid-column: 2;
   grid-row: 1;
   justify-self: end;
 }
 #age {
-  margin: 0px 27px 15px;
+  margin: 0px 25px 15px;
   justify-self: end;
 }
 
 
 /* LANGUAGE QUESTION */
 #lang-question {
-  
+  margin: 20px 5px 10px;
 }
 
 /* LANGUAGE CONTAINER */
 #lang-container {
   display: grid; 
   grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin: 0px 20px 0px 20px;
 }
 
 
 /* AREA */
-#select-container {}
+#select-container {
+  display: grid;
+  grid-template-columms: 1fr 1fr;
+}
+#select-label {
+  display: inherit;
+}
+#select {
+  
+}
 
-/* EXPERIENCE */
-#experience-level-container {}
+/* EXPERIENCE QUESTION */
+#level-question {
+  margin: 25px 5px 15px;
+}
+
+/* EXPERIENCE CONTAINER */
+#experience-level-container {
+  margin: 0px 15px;
+}
 #level-label {}
+.levels {
+  margin: 0px 10px;
+}
 
 
 /* TEXTAREA */
@@ -147,6 +167,38 @@ textarea {
 }
 
 /* TEXTFIELD CONTAINER */
-#text-field-container {}
-#text-field-label {}
-#field {}
+#text-field-container {
+  margin: 20px 0px 0px 0px;
+  display: grid;
+  grid-template-rows: repeat(6, 1fr);
+}
+#text-field-label {
+  grid-row: 1;
+  margin: 0px 5px 10px;
+  font-family: Rubik;
+}
+#field {
+  grid-row: 2/6;
+  margin: 0px 5px 0px 5px;
+  padding: 6px;
+  border: 0px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px 0px;
+  
+}
+
+
+/* BUTTON CONTAINER */
+#btn-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1f 1fr;
+}
+#btn-submit {
+  background: #FF6347;
+  grid-column: 5/5;
+  margin:;
+  padding:;
+  border: outset;
+  border-radius:;
+  box-shadow:;
+}

@@ -16,7 +16,7 @@
     <main id="main">
       <div id="container">
         <form action="">
-          <p>¿Te gustaría trabajar con nosotros?</p>
+          <p>Would like you to work with us?</p>
           <!-- names container -->
           <div id="names-container">
             <!-- NAME -->
@@ -36,9 +36,7 @@
           </div>
           <hr>
           <!-- language question -->
-          <p id="lang-question">
-            ¿What language do you know? 
-          </p>
+          <p id="lang-question">What language do you know?</p>
           <!-- language container -->
           <div id="lang-container">
             <label for="python">
@@ -70,8 +68,8 @@
             </label>
           </div>
           <!-- area select-->
-          <div div="select-container">
-            <label for="select">Area</label>
+<!--           <div div="select-container">
+            <label for="select" id="select-label">Area</label>
             <select name="area" id="select">
               <option value="1">Web development</option>
               <option value="2">Web design</option>
@@ -84,23 +82,27 @@
               <option value="9">Blockchain development</option>
               <option value="10">Others</option>
             </select>
-          </div>
-          <!-- level -->
+          </div> -->
+          <!-- experience question -->
+          <p id="level-question">What level of experience do you have?</p>
+          <!-- experience container -->
           <div id="experience-level-container">
-            <p>What level of experience do you have?</p>
             <label for="level" id="level-label">
-              <input type="radio" name="level" id="level1">Traineer
-              <input type="radio" name="level" id="level2">Junior
-              <input type="radio" name="level" id="level3">Semi-senior
-              <input type="radio" name="level" id="level4">Senior
+              <input type="radio" name="level" id="level1" class="levels">Traineer
+              <input type="radio" name="level" id="level2" class="levels">Junior
+              <input type="radio" name="level" id="level3" class="levels">Semi-senior
+              <input type="radio" name="level" id="level4" class="levels">Senior
             </label>
           </div>
           <!-- about you -->
           <div id="text-field-container">
-            <label for="field" id="text-field-label">Cuentanos sobre ti</label>
-            <textarea name="field" id="field" cols="55" rows="6"></textarea>
+            <label for="field" id="text-field-label">Tell us about yourself</label>
+            <textarea name="field" id="field" cols="" rows=""></textarea>
           </div>
-<!-- <button type="submit">Submit</button> -->
+          <!-- button -->
+          <div id="btn-container">
+            <button type="submit" id="btn-submit">Submit</button>
+          </div>
         </form>
       </div>
     </main>
