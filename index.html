@@ -1,7 +1,7 @@
 ﻿<html lang="en">
   <head>
-  <link rel="stylesheet" type="text/css" href="style.css">
-        <!-- Fonts -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Charm&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
@@ -12,9 +12,8 @@
   <body>
 
     <h1>Te queremos conocer / te estamos buscando!</h1>
-    <!--  Main    -->
+    <!--  Main  -->
     <main id="main">
-      
       <div id="container">
         <form action="">
           <p>¿Te gustaría trabajar con nosotros?</p>
@@ -36,50 +35,74 @@
             <input type="number" name="age" id="age" min="18" max="65">
           </div>
           <hr>
+          <!-- language question -->
+          <p id="lang-question">
+            ¿What language do you know? 
+          </p>
           <!-- language container -->
           <div id="lang-container">
-            <label for="lang" id="lang-label">Technologies</label>
-            <label for="lang" id="lang-label-container">
-              <input type="checkbox" name="lang" id="lang">Python
-              <input type="checkbox" name="lang" id="lang">Javascript
-              <input type="checkbox" name="lang" id="lang">Java
-              <input type="checkbox" name="lang" id="lang">C#
-              <input type="checkbox" name="lang" id="lang">R
-              <input type="checkbox" name="lang" id="lang">Go
-              <input type="checkbox" name="lang" id="lang">Kotlin
-              <input type="checkbox" name="lang" id="lang">Others
+            <label for="python">
+              <input type="checkbox" name="lang" id="python">Python
+            </label>
+            <label for="javascript">
+              <input type="checkbox" name="lang" id="javascript">Javascript
+            </label>
+            <label for="java">
+              <input type="checkbox" name="lang" id="java">Java
+            </label>
+            <label for="c">
+              <input type="checkbox" name="lang" id="c">C#
+            </label>
+            <label for="r">
+              <input type="checkbox" name="lang" id="r">R
+            </label>  
+            <label for="go">
+              <input type="checkbox" name="lang" id="go">Go
+            </label>
+            <label for="kotlin">
+              <input type="checkbox" name="lang" id="kotlin">Kotlin
+            </label>
+            <label for="typescript">
+              <input type="checkbox" name="lang" id="typescript">Typescript
+            </label>
+            <label for="others">
+              <input type="checkbox" name="lang" id="others">Others
             </label>
           </div>
           <!-- area select-->
           <div div="select-container">
-            <label for="area">Area</label>
+            <label for="select">Area</label>
             <select name="area" id="select">
               <option value="1">Web development</option>
-              <option value="2">Videogame development</option>
+              <option value="2">Web design</option>
               <option value="3">Data science</option>
               <option value="4">Quality Assurance</option>
-              <option value="5">Others</option>
+              <option value="5">Web administrator</option>
+              <option value="6">Videogame development</option>
+              <option value="7">Cloud development</option>
+              <option value="8">Operations development</option>
+              <option value="9">Blockchain development</option>
+              <option value="10">Others</option>
             </select>
           </div>
           <!-- level -->
           <div id="experience-level-container">
-            <label for="level" id="level-label">Experience</label>
-            <label for="level" id="level-label-container">
-            <input type="radio" name="level" id="level1">Traineer
-            <input type="radio" name="level" id="level2">Junior
-            <input type="radio" name="level" id="level3">Semi-senior
-            <input type="radio" name="level" id="level4">Senior
+            <p>What level of experience do you have?</p>
+            <label for="level" id="level-label">
+              <input type="radio" name="level" id="level1">Traineer
+              <input type="radio" name="level" id="level2">Junior
+              <input type="radio" name="level" id="level3">Semi-senior
+              <input type="radio" name="level" id="level4">Senior
             </label>
           </div>
           <!-- about you -->
           <div id="text-field-container">
             <label for="field" id="text-field-label">Cuentanos sobre ti</label>
-            <textarea name="field" id="text-field" cols="55" rows="6"></textarea>
+            <textarea name="field" id="field" cols="55" rows="6"></textarea>
           </div>
 <!-- <button type="submit">Submit</button> -->
         </form>
       </div>
-      
     </main>
   </body>
 </html>
