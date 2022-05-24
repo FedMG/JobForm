@@ -1,0 +1,19 @@
+/* BUTTON CONTAINER */
+.form__button {
+  display: grid;
+  grid-template-columns: 2;
+  justify-items: end;
+  @extend .form__data;
+}
+.button {
+  font-weight: bold;
+  background-color: #ed745e;
+  padding: 5px 18px 5px 18px;
+  border: 1.5px outset;
+  border-radius: 5px;
+  box-shadow: 1px 1px 5px 0px;
+}
+.button:hover {
+  background-color: #e25036;
+}
+

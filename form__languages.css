@@ -1,0 +1,9 @@
+/* LANGUAGE CONTAINER */
+.form__languages {
+  @extend .form__data;
+}
+
+.languages__inputs {
+  display: grid; 
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+}

@@ -1,0 +1,11 @@
+/* EXPERIENCE CONTAINER */
+.form__experience {
+  @extend .form__data;
+}
+
+.experience__levels {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 100px));
+}
+.levels {
+}
